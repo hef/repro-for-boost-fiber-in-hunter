@@ -1,5 +1,5 @@
 language: cpp
-script: cmake -H. -B_builds/osx_xcode10 -DHUNTER_STATUS_DEBUG=ON
+script: cmake -H. -B_builds/osx_xcode10 -DCMAKE_TOOLCHAIN_FILE=cmake/toolchain.cmake -DHUNTER_STATUS_DEBUG=ON
 matrix:
   include:
     - os: osx
